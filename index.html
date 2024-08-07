@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/triforce.ico">
+    <link href="/src/public/styling/style.css" rel="stylesheet">
+    <script src="scripts/tailwind.js"></script>
+    <script src="scripts/flowbite.min.js"></script>
+</head>
+<body>
+    <!-- navigation -->
+    <nav>
+        <ul>
+            <a href="#"><img src="images/logo.png" alt="logo"></a>
+            <li><p>Home systems</p>
+                <ul>
+                    <li><a href="#">NES</a></li>
+                    <li><a href="#">SNES</a></li>
+                    <li><a href="#">Nintendo 64</a></li>
+                    <li><a href="#">Gamecube</a></li>
+                    <li><a href="#">Wii</a></li>
+                    <li><a href="#">Wii U</a></li>
+                    <li><a href="#">Switch</a></li>
+                </ul>
+            </li>
+            <li><p>Handheld systems</p>
+                <ul>
+                    <li><a href="#">Game & Watch</a></li>
+                    <li><a href="#">Gameboy</a></li>
+                    <li><a href="#">Gameboy color</a></li>
+                    <li><a href="#">Gameboy advance</a></li>
+                    <li><a href="#">DS</a></li>
+                    <li><a href="#">3DS</a></li>
+                    <li><a href="#">Switch</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <!-- slider -->
+        <div id="default-carousel" class="relative w-full" data-carousel="slide">
+            <!-- Carousel wrapper -->
+            <div class="relative h-56 overflow-hidden md:h-96">
+                <!-- Item 1 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="images/SnesBanner.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="snesBanner">
+                </div>
+                <!-- Item 2 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="images/N64Banner.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="N64Banner">
+                </div>
+                <!-- Item 3 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="images/SwitchBanner.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="SwitchBanner">
+                </div>
+            </div>
+            <!-- Slider indicators -->
+            <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+                <button type="button" class="w-7 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+                <button type="button" class="w-7 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+                <button type="button" class="w-7 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+            </div>
+            <!-- Slider controls -->
+            <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+                <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                    <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+                    </svg>
+                    <span class="sr-only">Previous</span>
+                </span>
+            </button>
+            <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+                <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                    <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                    </svg>
+                    <span class="sr-only">Next</span>
+                </span>
+            </button>
+        </div>
+        <!-- systems -->
+        <div class="systemBox">
+            <div>
+                <img src="images/HomeConsoles.png" alt="homeConsole">
+                <h1>Home Systems</h1>
+                <div><h1>Learn more</h1></div>
+            </div>
+            <div>
+                <img src="images/HandheldConsoles.png" alt="HandheldConsoles">
+                <h1>Handheld Systems</h1>
+                <div><h1>Learn more</h1></div>
+            </div>
+        </div>
+        <div class="consoleBox">
+            <h1>Explore some of Nintendo's most revolutionary gaming consoles</h1>
+            <div class="consoles">
+                <div>
+                    <img src="images/N64.png" alt="Nintendo 64">
+                    <div>
+                        <h1>Nintendo 64</h1>
+                        <p>The Nintendo 64, released in 1996, is a revolutionary 64-bit gaming console known for its iconic games and innovative 3D graphics.</p>
+                        <div><h1>Learn more</h1></div>
+                    </div>
+                </div>
+                <div>
+                    <img src="images/GameboyColor.png" alt="Gameboy Color">
+                    <div>
+                        <h1>Gameboy Color</h1>
+                        <p>The Game Boy Color, released in 1998, is a handheld gaming console with a color screen, expanding the original Game Boy's capabilities.</p>
+                        <div><h1>Learn more</h1></div>
+                    </div>
+                </div>
+                <div>
+                    <img src="images/Nswitch.png" alt="Nintendo Switch">
+                    <div>
+                        <h1>Nintendo Switch</h1>
+                        <p>The Nintendo Switch, launched in 2017, is a versatile hybrid console offering both handheld and docked play, featuring innovative Joy-Con controllers.</p>
+                        <div><h1>Learn more</h1></div>
+                    </div>
+                </div>
+                <div>
+                    <img src="images/3DS.png" alt="Nintendo 3DS">
+                    <div>
+                        <h1>Nintendo 3DS</h1>
+                        <p>The Nintendo 3DS, released in 2011, is a handheld console featuring glasses-free 3D graphics, backward compatibility, and a wide game library.</p>
+                        <div><h1>Learn more</h1></div>
+                    </div>
+                </div>
+            </div>
+        </div>        
+    </main>
+    <footer>
+        <p>Programmed by: Jules Verbruggen</p>
+        <p>Designed by: Jelle van Kleef</p>
+        <br>
+        <p>2024 All Rights Reserved</p>
+    </footer>
+</body>
+</html>
